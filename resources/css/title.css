@@ -1,0 +1,48 @@
+h1 {
+    color: white;
+    font-size: 2em;
+    /* Tamaño del texto */
+    text-transform: uppercase;
+    /* Convertir texto a mayúsculas */
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 2;
+    /* Asegura que el texto principal esté en la capa superior */
+}
+
+h1::before,
+h1::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.462), rgba(255, 166, 0, 0.495));
+    /* Sombreado rojo y azul */
+    border-radius: 15px;
+    /* Ajustar el valor según sea necesario para hacer las esquinas más redondeadas */
+    transform: rotate(0.5deg);
+    /* Ajuste adicional para evitar la apariencia cuadrada */
+}
+
+h1::before {
+    left: 2px;
+    /* Ajustar según sea necesario para evitar la superposición con el texto */
+    top: 2px;
+    /* Ajustar según sea necesario para evitar la superposición con el texto */
+    animation: moveBackground 5s linear infinite alternate;
+    /* Movimiento automático */
+}
+
+h1::after {
+    left: 0;
+    top: 0;
+}
+
+@keyframes moveBackground {
+    to {
+        left: 100%;
+        /* Ajustar según sea necesario para el desplazamiento completo */
+    }
+}

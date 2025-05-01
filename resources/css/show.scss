@@ -1,0 +1,73 @@
+/* Shop Detail Start */
+
+
+/* Estilos Personalizados */
+
+
+/* Fondo naranja transparente y borde para los contenedores principales */
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.882);
+    /* Fondo naranja transparente */
+    border: 1px solid rgba(255, 165, 0, 0.5);
+    /* Borde naranja semitransparente */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(222, 17, 17, 0.758);
+    /* Sombra ligera */
+}
+
+.bg-light2 {
+    background-color: rgba(0, 0, 0, 0.882) !important;
+    /* Fondo naranja transparente */
+    border: 1px solid rgba(255, 165, 0, 0.5);
+    /* Borde naranja semitransparente */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(222, 17, 17, 0.758);
+    /* Sombra ligera */
+}
+
+
+/* Estilos para el fondo naranja transparente del nombre del producto */
+
+.custom-bg {
+    // background-color: rgb(204, 119, 34) !important;
+    background-color: rgb(0, 0, 0) !important;
+    border-radius: 10px;
+    padding: 20px;
+    /* Añadir espacio interno */
+}
+
+
+/* Añadir espaciado entre las pestañas y el contenido */
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+
+/* Añadir espaciado entre los elementos de la lista en las pestañas */
+
+.list-group-item {
+    margin-bottom: 10px;
+}
+
+
+/* Permitir la entrada manual en el campo de número */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* Estilo para ocultar las flechas de incremento y decremento en input tipo number */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* End  Shop Detail Start */

@@ -1,0 +1,568 @@
+// @import 'bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/bootstrap";
+//<!-- Navbar Start -->
+.bg-dark {
+    background-color: black !important;
+    /* Azul oscuro */
+    // background-image: linear-gradient(to right, #E4C9A6, #D2B48C, #C09F72);
+    // background-image: linear-gradient(to right, #e57b8b, #FFFAFA, #e77e3d);
+    // background-image: linear-gradient(to right, #f896b7, #f48d18);
+}
+
+.custom-nav-btn {
+    height: 48px;
+    padding: 0 30px;
+}
+
+.custom-nav-vertical {
+    width: calc(100% - 30px);
+    z-index: 999;
+}
+
+.custom-navbar-brand {
+    display: block;
+    display: none;
+}
+
+.custom-brand-part1 {
+    background-color: light;
+    padding: 0 2px;
+}
+
+.custom-brand-part2 {
+    background-color: primary;
+    padding: 0 2px;
+    margin-left: -1px;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+//hover
+.navbar-nav .nav-item:hover {
+    background-color: rgba(233, 16, 16, 0.482);
+    /* Cambia al color que desees */
+}
+
+.custom-dropdown:hover .nav-item.nav-link {
+    background-color: rgba(197, 146, 51, 0.589);
+    /* Cambia al color que desees */
+}
+
+//End hover
+.nav-item.nav-link {
+    // background: linear-gradient(270deg, #FF69B4, #FFA500);
+    background: white;
+    /* #FF69B4 es rosado y #FFA500 es naranja */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientChange 3s infinite;
+    /* La animación se llama "gradientChange" y tiene una duración de 3 segundos */
+}
+
+
+/* Estilos específicos para la opción "Tienda" cuando está activa */
+
+.nav-item.nav-link.active {
+    background-color: rgb(255, 111, 0);
+    /* Reemplaza "tu-color-de-fondo" con el color deseado para el fondo */
+    color: red;
+    /* Reemplaza "tu-color-de-texto" con el color deseado para el texto */
+    font-size: 1.1em;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-primary {
+    background: linear-gradient(270deg, #fb70b6, #f68d1e);
+    /* #FF69B4 es rosado y #FFA500 es naranja */
+    background-size: 200% 200%;
+    color: white;
+    animation: gradientChange 3s infinite;
+    /* La animación se llama "gradientChange" y tiene una duración de 3 segundos */
+}
+
+//para el LOGO
+.video-logo-container {
+    display: flex;
+    align-items: center;
+    /* Centrar verticalmente el video en el navbar */
+    margin-left: auto;
+    /* Alinear el video a la derecha del navbar */
+}
+
+.video-logo-container video {
+    border: none;
+    outline: none;
+}
+
+.logodos-video {
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    /* Alineación vertical con el texto */
+    margin-right: 5px;
+    /* Espacio entre el video y el texto, ajusta según necesidad */
+}
+
+//OPCIONES
+
+/* Estilo para el enlace principal del menú desplegable personalizado */
+
+.custom-dropdown .nav-link.dropdown-toggle {
+    // background: linear-gradient(270deg, #FF69B4, #FFA500);
+    background: white;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientChange 3s infinite;
+    border: none;
+}
+
+
+/* Estilo para el menú desplegable personalizado */
+
+.custom-dropdown .dropdown-menu {
+    background-color: rgba(15, 14, 14, 0.5);
+    border: none;
+}
+
+
+/* Estilo para los ítems dentro del menú desplegable personalizado */
+
+.custom-dropdown .dropdown-menu .dropdown-item {
+    // background: linear-gradient(270deg, #FF69B4, #FFA500);
+    background: white;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientChange 3s infinite;
+}
+
+
+/* Estilo cuando se pasa el ratón por encima de los ítems del menú desplegable personalizado */
+
+.custom-dropdown .dropdown-menu .dropdown-item:hover {
+    background: none;
+    background-image: linear-gradient(270deg, #FF69B4, #FFA500);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientChange 3s infinite;
+}
+
+
+/* Estilo específico para pantallas pequeñas */
+
+@media (max-width: 767px) {
+    .custom-dropdown .dropdown-menu {
+        width: auto;
+        /* Se ajustará al contenido automáticamente */
+        max-width: 100%;
+        /* No excederá el ancho de la pantalla */
+        border: none;
+        /* Elimina el borde */
+        box-shadow: none;
+        /* Elimina cualquier sombra */
+    }
+    /* Opcional: Estilo para cuando un enlace está activo (si no se ve bien) */
+    .custom-dropdown .dropdown-item.active {
+        background-color: rgba(0, 0, 0, 0.982);
+        /* Por ejemplo, un gris claro al estar activo */
+    }
+}
+
+//FIN OPCIONES
+
+/* Resaltar elementos en el menú al pasar el mouse */
+
+//<!-- Navbar End -->--------------------------------------------------------------------------
+.logo-with-image {
+    display: inline-block;
+    /* para que acepte width y height */
+    width: 180px;
+    /* ajusta según tu necesidad */
+    height: 40px;
+    /* ajusta según tu necesidad */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+//Footer Start
+.footer-container {
+    background-color: #151414;
+    color: #bbb;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 40vh;
+}
+
+.content-row {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+}
+
+.contact-col {
+    padding-right: 3%;
+    padding-right: 5%;
+}
+
+.footer-link {
+    color: red;
+    text-decoration: none;
+}
+
+.footer-bottom-row {
+    border-top: 1px solid rgba(256, 256, 256, .1);
+    padding: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    gap: 15px;
+}
+
+//Footer End
+//topnavbar
+@keyframes gradientShift {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+//end topnavbar
+//imagen de fondo
+body {
+    background-image: url("{{ asset('images/fondo.webp') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+// end de fondo
+// //BACK TO TOP
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+}
+
+// //END BACK TO TOP
+//REDES SOCIALES FLOTANTE
+.social-bubble-container {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+.social-bubble-links {
+    position: relative;
+}
+
+.social-bubble-links a {
+    /* Estilos comunes para todas las burbujas */
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+    font-size: 24px;
+    background: linear-gradient(45deg, red, yellow, green);
+    color: white;
+    transform: translateY(60px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.social-bubble-links a:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    background: #0d0d0e;
+    /* Color de Facebook */
+}
+
+.social-bubble-links a:nth-child(2) {
+    left: 0;
+    bottom: 60px;
+    background: #302bc4;
+    /* Color de YouTube */
+}
+
+// .social-bubble-links a:nth-child(3) {
+//     left: 0;
+//     bottom: 120px;
+//     background: #1da1f2;
+//     /* Color de Twitter */
+// }
+.social-bubble-links a:nth-child(3) {
+    left: 0;
+    bottom: 120px;
+    background: #e00d0d;
+    /* Color de Tiktok */
+}
+
+.social-bubble-links a:nth-child(4) {
+    left: 0;
+    bottom: 180px;
+    background: linear-gradient(45deg, #FFDC80, #F77737, #F56040, #FD1D1D, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);
+    /* Gradiente de colores para Instagram (Púrpura a Azul) */
+}
+
+.social-bubble-links a:nth-child(5) {
+    left: 0;
+    bottom: 120px;
+    background: #0e0e0e;
+    /* Color de Tiktok */
+}
+
+#social-btn-more:checked~.social-bubble-links a {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.social-bubble-button label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(4, 110, 4), yellow, red);
+    color: white;
+    cursor: pointer;
+}
+
+//END REDES SOCIALES FLOTANTE
+//Productos
+.product-item {
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, border 0.3s;
+    position: relative;
+}
+
+.product-item .product-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 5px solid #f00;
+}
+
+.product-item:hover .product-action {
+    opacity: 1;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(50%);
+}
+
+.product-item .product-action a {
+    color: #ff0000;
+    /* Cambia el color que desees, aquí se establece en rojo (#ff0000) */
+}
+
+.product-item .product-action a:hover {
+    color: #1dcd0d;
+    /* Cambia el color al hacer hover, aquí se establece en verde (#00ff00) */
+}
+
+//End Productos
+//information
+
+/* Estilo para el contenedor de la misión */
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.custom-background {
+    background-color: rgba(128, 128, 128, 0.601) !important;
+}
+
+.white-text {
+    color: white;
+}
+
+.white-linea {
+    border-top: 3px solid red;
+}
+
+.embed-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+//end information
+//news
+
+/* Estilos personalizados */
+
+// .facebook-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     min-height: 100vh;
+// }
+.facebook-post {
+    // border: 2px solid #000000;
+    border: 3px solid rgb(210, 105, 30);
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 15px;
+    // background-color: rgb(210, 105, 30);
+    background-color: #000000;
+    /* Fondo azul transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombreado suave */
+    // max-width: 500px;
+    max-width: 610px;
+    /* Limita el ancho máximo para mantenerlo responsivo */
+    // height: 625px;
+    /* Establecer una altura fija */
+}
+
+.post-header img {
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.post-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-content {
+    max-width: 100%;
+    /* Ajusta el ancho máximo */
+    color: white;
+}
+
+.post-content img {
+    width: 100%;
+    /* Ajusta al 100% del contenedor */
+    max-width: 100%;
+    /* Limita el ancho máximo */
+    max-height: 415px;
+    /* Ajusta la altura máxima deseada */
+    height: auto;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-left: 0px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.post-time {
+    color: #da1a1a;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.post-actions button {
+    margin-right: 10px;
+}
+
+//cerrar la venta emergente de la imagen
+
+/* Estilos para la ventana emergente */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro semitransparente */
+    z-index: 1;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#popupImage {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+
+/* Estilos para el botón "X" */
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-popup:hover {
+    color: red;
+    /* Cambia el color al pasar el mouse por encima */
+}
+
+//end cerrado
+//end news
