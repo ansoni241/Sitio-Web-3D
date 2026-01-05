@@ -19,6 +19,7 @@ class StoreController extends Controller
     }
     public function agregarAlCarrito(Request $request, Store $store)
     {
+        //No implementado aún
         // Lógica para agregar el producto al carrito
         // Puedes usar el modelo $store para obtener la información del producto
 
